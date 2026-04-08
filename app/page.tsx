@@ -7,8 +7,8 @@ import { useLang } from "./components/LanguageContext";
 const content = {
   en: {
     label: "Selected Work",
-    headline: ["I find the gap between what data shows", "and what people ", "actually", " feel."],
-    sub: "User research and product thinking — with a background in finance, field research, and building small things that work.",
+    headline: ["I study what the", "numbers ", "don\u2019t", " capture."],
+    sub: "User research and product thinking — finance background, field research experience, and a habit of building things to test ideas.",
     nav: { work: "Work", about: "About" },
     footer: "Rachel Meng · 2026",
     cases: [
@@ -52,8 +52,8 @@ const content = {
   },
   zh: {
     label: "精选作品",
-    headline: ["我研究数据呈现的东西", "和人", "真实", "感受之间的缺口。"],
-    sub: "用户研究与产品思维——背景是金融、田野调研，和把小东西做到真正好用。",
+    headline: ["研究数字", "覆盖", "不到", "的那些部分。"],
+    sub: "用户研究与产品思维——金融背景，田野调研经验，习惯动手验证想法。",
     nav: { work: "作品", about: "关于" },
     footer: "蒙青璇 · 2026",
     cases: [

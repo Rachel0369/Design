@@ -7,14 +7,14 @@ const t = {
   en: {
     back: "← Rachel Meng",
     title: "About",
-    intro1: "I\u2019m Rachel Meng \u2014 a researcher and product thinker with a background in finance and a consistent interest in one question:",
-    introEm: "what\u2019s the gap between what systems measure and what people actually experience?",
-    intro2: "I find that question everywhere \u2014 in a campus food app that needed a decision layer, not just a menu; in a gaming platform where community metrics looked fine on the surface and weren\u2019t; in a focus timer where the number meant almost nothing to the person staring at it.",
+    intro1: "I\u2019m Rachel Meng \u2014 a user researcher with a background in finance. Most of my work is about one thing:",
+    introEm: "why products don\u2019t work the way they\u2019re supposed to, even when the metrics look fine.",
+    intro2: "That question has come up in a campus food app that needed a decision layer, not just a menu; a gaming platform where community health looked fine on paper and wasn\u2019t; a focus timer where the number on screen meant almost nothing to the person staring at it.",
     blocks: {
       currently: {
         label: "Currently",
-        degree: "MSc in Finance (in progress) \u00b7 Xiamen National Accounting Institute \u00b7 2025\u20132028",
-        note: "Exploring leave of absence to pursue a fully-funded master\u2019s in service design, HCI, or mixed-methods research in Europe.",
+        degree: "MSc in Finance \u00b7 Xiamen National Accounting Institute (XNAI) \u00b7 2025\u20132028",
+        note: "XNAI is directly under China\u2019s Ministry of Finance \u2014 one of the key institutions for accounting and finance talent development. Coursework: Quantitative Research Methods, Financial Statement Analysis, Empirical Accounting Research, Corporate Governance.",
       },
       education: {
         label: "Education",
@@ -52,14 +52,14 @@ const t = {
   zh: {
     back: "← 蒙青璇",
     title: "关于我",
-    intro1: "我是蒙青璇——一个有金融背景的研究者和产品思考者，始终在追一个问题：",
-    introEm: "系统衡量的东西，和人真实感受到的东西，之间的缺口在哪里？",
-    intro2: "这个问题我到处都能找到——在一个需要的不是菜单而是决策支持的校园食堂 App 里；在一个社区指标表面健康、实则不然的游戏平台里；在一个专注计时器里，那个数字对盯着它的人来说几乎什么都说明不了。",
+    intro1: "我是蒙青璇，金融背景，做用户研究。我的大部分工作都围绕一个具体问题：",
+    introEm: "产品为什么在数据看起来不错的情况下，用起来还是不对劲？",
+    intro2: "这个问题在很多地方出现过——一个需要决策支持而不只是菜单的食堂 App；一个社区健康度指标表面达标、实际问题已经积累的游戏平台；一个专注计时器，屏幕上的数字对盯着它的人几乎没有任何意义。",
     blocks: {
       currently: {
         label: "当前状态",
-        degree: "金融硕士（在读）· 厦门国家会计学院 · 2025–2028",
-        note: "正在考虑休学，申请欧洲全额奖学金项目，方向为服务设计、HCI 或混合方法研究。",
+        degree: "金融硕士 · 厦门国家会计学院 · 2025–2028",
+        note: "厦门国家会计学院直属财政部，是国家重点会计人才培养基地。主修课程：量化研究方法、财务报告分析、实证会计研究、公司治理。",
       },
       education: {
         label: "教育背景",

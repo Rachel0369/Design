@@ -3,12 +3,12 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f3ede3;
-  --surface: #ebe4d8;
-  --border: #d0c8ba;
-  --text: #1e1a14;
-  --muted: #7a7265;
-  --accent: #8a6010;
+  --bg: #eef3f8;
+  --surface: #e3ecf5;
+  --border: #c0d3e8;
+  --text: #0f1f32;
+  --muted: #4a6a88;
+  --accent: #1d5fa6;
 }
 
 * { box-sizing: border-box; }
