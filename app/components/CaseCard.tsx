@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 interface Case {
   slug: string;
@@ -15,9 +16,35 @@ interface Case {
 }
 
 export default function CaseCard({ c }: { c: Case }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.12 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const base: React.CSSProperties = {
+    transition: "opacity 0.55s ease, transform 0.55s ease, background 0.2s",
+  };
+  const hidden: React.CSSProperties = { opacity: 0, transform: "translateY(28px)" };
+  const shown: React.CSSProperties = { opacity: 1, transform: "translateY(0)" };
+
   return (
     <Link href={`/work/${c.slug}`} style={{ textDecoration: "none", display: "block" }}>
       <div
+        ref={ref}
         style={{
           display: "grid",
           gridTemplateColumns: "72px 1fr auto",
@@ -25,8 +52,9 @@ export default function CaseCard({ c }: { c: Case }) {
           gap: "2rem",
           padding: "3rem 0",
           borderBottom: "1px solid var(--border)",
-          transition: "background 0.2s",
           cursor: "pointer",
+          ...base,
+          ...(visible ? shown : hidden),
         }}
         onMouseEnter={(e) => ((e.currentTarget as HTMLDivElement).style.background = "var(--surface)")}
         onMouseLeave={(e) => ((e.currentTarget as HTMLDivElement).style.background = "transparent")}
@@ -69,8 +97,20 @@ export default function CaseCard({ c }: { c: Case }) {
           </div>
         </div>
 
-        {/* Stat + image */}
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "1.5rem", minWidth: "160px", paddingRight: "2rem" }}>
+        {/* Stat + image — slightly delayed for stagger */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-end",
+            gap: "1.5rem",
+            minWidth: "160px",
+            paddingRight: "2rem",
+            ...base,
+            transitionDelay: visible ? "0.15s" : "0s",
+            ...(visible ? shown : hidden),
+          }}
+        >
           <div style={{ textAlign: "right" }}>
             <div className="font-display" style={{ fontSize: "2rem", color: c.color }}>{c.stat.value}</div>
             <div style={{ color: "var(--muted)", fontSize: "0.75rem" }}>{c.stat.label}</div>
