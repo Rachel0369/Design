@@ -48,6 +48,18 @@ const content = {
         image: "/slowfocus-timer.png",
         color: "#4f4f9c",
       },
+      {
+        slug: "zijin",
+        index: "04",
+        title: "Zijin Mining ESG Fieldwork",
+        subtitle: "Field Research \u00b7 Policy Writing",
+        description:
+          "Qualitative research into a Chinese mining company\u2019s ESG governance in Serbia. 29 interviewees, 50+ hours of recordings. Co-authored policy report submitted to China\u2019s Ministry of Finance.",
+        tags: ["Qualitative Research", "Policy Writing", "Synthesis"],
+        stat: { value: "29", label: "interviewees across 2 countries" },
+        image: null,
+        color: "#2a6060",
+      },
     ],
   },
   zh: {
@@ -92,6 +104,18 @@ const content = {
         stat: { value: "进行中", label: "目标 App Store 上线" },
         image: "/slowfocus-timer.png",
         color: "#4f4f9c",
+      },
+      {
+        slug: "zijin",
+        index: "04",
+        title: "紫金矿业 ESG 田野调研",
+        subtitle: "田野调研 · 政策写作",
+        description:
+          "对一家中国矿业企业在塞尔维亚的 ESG 治理进行定性研究。29 名受访者，50+ 小时录音。双署名政策报告已提交财政部评选。",
+        tags: ["定性研究", "政策写作", "洞察综合"],
+        stat: { value: "29", label: "跨两国受访者" },
+        image: null,
+        color: "#2a6060",
       },
     ],
   },

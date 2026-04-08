@@ -105,7 +105,7 @@ export default function EatTodayCase() {
       <nav style={{ borderBottom: "1px solid var(--border)", padding: "0 2rem", height: "56px", display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, background: "var(--bg)", zIndex: 50 }}>
         <Link href="/" style={{ color: "var(--muted)", textDecoration: "none", fontSize: "0.875rem" }}>{c.back}</Link>
         <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-          <span style={{ color: "var(--border)", fontSize: "0.75rem", letterSpacing: "0.1em" }}>01 / 03</span>
+          <span style={{ color: "var(--border)", fontSize: "0.75rem", letterSpacing: "0.1em" }}>01 / 04</span>
           <LangToggle />
         </div>
       </nav>

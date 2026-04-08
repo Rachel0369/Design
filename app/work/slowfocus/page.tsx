@@ -67,7 +67,7 @@ const t = {
         { status: "future", label: "Xiaohongshu launch & community building" },
       ],
     },
-    prev: "← Gpark Community", next: "About",
+    prev: "← Gpark Community", next: "ESG Fieldwork", nextHref: "/work/zijin",
   },
   zh: {
     back: "← 蒙青璇", tag: "用户研究 · 自主项目 · 进行中",
@@ -131,7 +131,7 @@ const t = {
         { status: "future", label: "小红书上线与社区运营" },
       ],
     },
-    prev: "← Gpark 社区研究", next: "关于",
+    prev: "← Gpark 社区研究", next: "ESG 田野调研", nextHref: "/work/zijin",
   },
 };
 
@@ -228,7 +228,7 @@ export default function SlowFocusCase() {
 
         <div style={{ borderTop: "1px solid var(--border)", paddingTop: "3rem", marginTop: "4rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <Link href="/work/gpark" style={{ textDecoration: "none", color: "var(--muted)", fontSize: "0.85rem" }}>{c.prev}</Link>
-          <Link href="/about" style={{ textDecoration: "none", display: "flex", alignItems: "baseline", gap: "0.75rem" }}>
+          <Link href={c.nextHref} style={{ textDecoration: "none", display: "flex", alignItems: "baseline", gap: "0.75rem" }}>
             <span className="font-display" style={{ fontSize: "1.5rem", color: "var(--text)" }}>{c.next}</span>
             <span style={{ color: "var(--accent)" }}>→</span>
           </Link>
