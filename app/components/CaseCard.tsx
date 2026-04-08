@@ -47,7 +47,7 @@ export default function CaseCard({ c }: { c: Case }) {
         ref={ref}
         style={{
           display: "grid",
-          gridTemplateColumns: "72px 1fr auto",
+          gridTemplateColumns: "1fr auto",
           alignItems: "start",
           gap: "2rem",
           padding: "3rem 0",
@@ -59,13 +59,11 @@ export default function CaseCard({ c }: { c: Case }) {
         onMouseEnter={(e) => ((e.currentTarget as HTMLDivElement).style.background = "var(--surface)")}
         onMouseLeave={(e) => ((e.currentTarget as HTMLDivElement).style.background = "transparent")}
       >
-        {/* Index */}
-        <span style={{ color: "var(--border)", fontSize: "0.75rem", letterSpacing: "0.1em", paddingTop: "0.25rem" }}>
-          {c.index}
-        </span>
-
         {/* Content */}
         <div>
+          <span style={{ color: "var(--border)", fontSize: "0.72rem", letterSpacing: "0.12em", display: "block", marginBottom: "0.5rem" }}>
+            {c.index}
+          </span>
           <div style={{ display: "flex", alignItems: "baseline", gap: "1rem", marginBottom: "0.5rem", flexWrap: "wrap" }}>
             <h2
               className="font-display"
@@ -97,7 +95,7 @@ export default function CaseCard({ c }: { c: Case }) {
           </div>
         </div>
 
-        {/* Stat + image — slightly delayed for stagger */}
+        {/* Stat + image */}
         <div
           style={{
             display: "flex",
@@ -106,6 +104,7 @@ export default function CaseCard({ c }: { c: Case }) {
             gap: "1.5rem",
             minWidth: "160px",
             paddingRight: "2rem",
+            paddingTop: "1.6rem",
             ...base,
             transitionDelay: visible ? "0.15s" : "0s",
             ...(visible ? shown : hidden),
