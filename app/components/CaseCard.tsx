@@ -70,7 +70,7 @@ export default function CaseCard({ c }: { c: Case }) {
         </div>
 
         {/* Stat + image */}
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "1.5rem", minWidth: "160px" }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "1.5rem", minWidth: "160px", paddingRight: "2rem" }}>
           <div style={{ textAlign: "right" }}>
             <div className="font-display" style={{ fontSize: "2rem", color: c.color }}>{c.stat.value}</div>
             <div style={{ color: "var(--muted)", fontSize: "0.75rem" }}>{c.stat.label}</div>
