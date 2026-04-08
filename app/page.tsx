@@ -148,13 +148,12 @@ export default function Home() {
         <h1 className="font-display" style={{ fontSize: "clamp(2.6rem, 6vw, 5.2rem)", lineHeight: 1.1, color: "var(--text)", maxWidth: "900px", marginBottom: "2rem" }}>
           {lang === "en" ? (
             <>
-              I find the gap between what data shows<br />
-              and what people <em>actually</em> feel.
+              I study what the numbers<br />
+              <em>don&apos;t</em> capture.
             </>
           ) : (
             <>
-              我研究数据呈现的东西<br />
-              和人<em style={{ fontStyle: "normal", color: "var(--accent)" }}>真实</em>感受之间的缺口。
+              研究数字<em style={{ fontStyle: "normal", color: "var(--accent)" }}>覆盖不到</em>的那些部分。
             </>
           )}
         </h1>
